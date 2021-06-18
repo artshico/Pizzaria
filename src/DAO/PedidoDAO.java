@@ -35,7 +35,7 @@ public class PedidoDAO {
         }
 
         public ArrayList listar(){
-            String select = "SELECT * FROM pedidospizzaria";
+            String select = "SELECT * FROM pedidos";
 
             Statement ps = null;
             ArrayList pedidos = new ArrayList<PedidoModel>();
