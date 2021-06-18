@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Controller.Principal">
+  <grid id="27dc6" binding="jPanelPrincipal" layout-manager="GridLayoutManager" row-count="19" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="671" height="549"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="c7bbe" class="javax.swing.JLabel" binding="jLabelTitulo">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="23" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pedidos Pizza"/>
+        </properties>
+      </component>
+      <component id="ed5d7" class="javax.swing.JLabel" binding="jlabelSabor01">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="01 - Abobrinha: muçarela, cream cheese (ou catupiry),"/>
+        </properties>
+      </component>
+      <component id="f6316" class="javax.swing.JLabel" binding="jLabelSabor02">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="02 - Alcachofrinha: alcachofra, azeitonas fatiadas e muçarela de búfala;"/>
+        </properties>
+      </component>
+      <component id="68603" class="javax.swing.JLabel" binding="jLabelSabor03">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="03 - Americana: presunto, champignon, catupiry e bacon crocante;"/>
+        </properties>
+      </component>
+      <component id="e6caf" class="javax.swing.JLabel" binding="jLabelSabor04">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="04 - Artezanalle: muçarela, fatias de calabresa curada picante e parmesão;"/>
+        </properties>
+      </component>
+      <component id="3ed40" class="javax.swing.JLabel" binding="jLabelSabor05">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="05 - Bacon: muçarela (ou catupiry) e bacon crocante;"/>
+        </properties>
+      </component>
+      <component id="b8bce" class="javax.swing.JLabel" binding="jLabelSabor06">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="06 - Baiana: calabresa moída, ovos, pimenta calabresa, cebola e parmesão;"/>
+        </properties>
+      </component>
+      <component id="81f" class="javax.swing.JLabel" binding="jLabelSabor07">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="07 - Caipira: filé de frango desfiado, milho e catupiry (ou muçarela);"/>
+        </properties>
+      </component>
+      <component id="fa094" class="javax.swing.JLabel" binding="jLabelSabor08">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="08 - Filé aos Quatro Queijos: filé, catupiry, muçarela, provolone e parmesão;"/>
+        </properties>
+      </component>
+      <component id="87350" class="javax.swing.JLabel" binding="jLabelSabor09">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="09 - Marguerita: muçarela, fatias de tomate, parmesão e folhas de manjericão;"/>
+        </properties>
+      </component>
+      <component id="9379f" class="javax.swing.JLabel" binding="jLabelSabor10">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="10 - Palmito: palmito e muçarela (ou catupiry);"/>
+        </properties>
+      </component>
+      <component id="ba038" class="javax.swing.JLabel" binding="jLabelInformaçãoPedido">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Abaixo Digite o numero correspondente, e o tamanho desejado ao sabor"/>
+        </properties>
+      </component>
+      <component id="726c0" class="javax.swing.JLabel" binding="jLabelTamanhoPizzaMedia">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Média: R$35,00"/>
+        </properties>
+      </component>
+      <component id="c705e" class="javax.swing.JLabel" binding="jLabelTamanhoGrande">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande: R$45,00"/>
+        </properties>
+      </component>
+      <component id="14e45" class="javax.swing.JTextField" binding="jTextFieldSaborEscolhido">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Digite aqui o numero do sabo desejado"/>
+        </properties>
+      </component>
+      <component id="3f705" class="javax.swing.JTextField" binding="jTextFieldTamanhoEscolha">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Qual tamanho?"/>
+        </properties>
+      </component>
+      <component id="83e50" class="javax.swing.JTextField" binding="JTextFieldQuantidade">
+        <constraints>
+          <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Qual quantidade?"/>
+        </properties>
+      </component>
+      <component id="7baaf" class="javax.swing.JButton" binding="fazerPedidoButton" default-binding="true">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Fazer Pedido"/>
+        </properties>
+      </component>
+      <component id="5e1d8" class="javax.swing.JButton" binding="cancelarButton" default-binding="true">
+        <constraints>
+          <grid row="18" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cancelar"/>
+        </properties>
+      </component>
+      <component id="d9c03" class="javax.swing.JLabel" binding="jLabelDados">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Digite Abaixo seus dados para finalizar seu pedido"/>
+        </properties>
+      </component>
+      <component id="7d14a" class="javax.swing.JTextField" binding="jTextFieldNome">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Nome completo"/>
+        </properties>
+      </component>
+      <component id="4854c" class="javax.swing.JTextField" binding="jTextFieldEndereco">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Endereço completo"/>
+        </properties>
+      </component>
+      <component id="28dc5" class="javax.swing.JTextField" binding="jTextFieldTelefone">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Telefone para contato"/>
+        </properties>
+      </component>
+      <component id="d77a6" class="javax.swing.JLabel" binding="jLabelTamanhoPizzaPequeno">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena: R$25,00"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,10 @@
+CREATE TABLE pedidos(
+ID INT PRIMARY KEY auto_increment,
+data_pedido Date,
+nome_completo VARCHAR(255),
+endereço VARCHAR(255),
+telefone BIGINT,
+sabor INT,
+tamanho VARCHAR(255),
+quantidade INT
+);
