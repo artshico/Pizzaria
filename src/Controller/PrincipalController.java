@@ -36,10 +36,6 @@ public class PrincipalController {
     private JTextField JTextFieldQuantidade;
     private JButton fazerPedidoButton;
     private JButton cancelarButton;
-    private JLabel jLabelDados;
-    private JTextField jTextFieldNome;
-    private JTextField jTextFieldEndereco;
-    private JTextField jTextFieldTelefone;
 
     public PrincipalController() {
 
