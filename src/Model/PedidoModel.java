@@ -12,30 +12,7 @@ public class PedidoModel {
         this.dataPedido = dataPedido;
     }
 
-    public String getNomeCompleto() {
-        return nomeCompleto;
-    }
-
-    public void setNomeCompleto(String nomeCompleto) {
-        this.nomeCompleto = nomeCompleto;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public double getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(double telefone) {
-        this.telefone = telefone;
-    }
-
+    
     public int getSabor() {
         return sabor;
     }
@@ -61,13 +38,10 @@ public class PedidoModel {
     }
 
     private Date dataPedido;
-    private String nomeCompleto;
-    private String endereco;
-    private double telefone;
+
     private int sabor;
     private String tamanho;
     private int quantidade;
 
-    public void setnomeCompeto(String text) {
-    }
+
 }

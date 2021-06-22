@@ -2,19 +2,18 @@ package Controller;
 
 import DAO.PedidoDAO;
 import Model.PedidoModel;
+import jdk.internal.logger.BootstrapLogger;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import static java.lang.Integer.*;
 
-public class Principal {
+public class PrincipalController {
 
     private JPanel jPanelPrincipal;
     private JLabel jLabelTitulo;
@@ -42,16 +41,22 @@ public class Principal {
     private JTextField jTextFieldEndereco;
     private JTextField jTextFieldTelefone;
 
-    public Principal() {
+    public PrincipalController() {
+
+            JFrame frame = new JFrame("Pedido");
+            frame.setContentPane(jPanelPrincipal);
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+            frame.setVisible(true);
+            frame.setMinimumSize(new Dimension(800,800));
+            //frame.setJMenuBar(menuBar);
+            frame.pack();
+
         fazerPedidoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 PedidoModel p = new PedidoModel();
 
-
-                p.setnomeCompeto(jTextFieldNome.getText());
-                p.setEndereco(jTextFieldEndereco.getText());
-                p.setTelefone(Double.parseDouble(jTextFieldTelefone.getText()));
+                p.setDataPedido(Calendar.getInstance().getTime());
                 p.setSabor(parseInt(jTextFieldSaborEscolhido.getText()));
                 p.setTamanho(jTextFieldTamanhoEscolha.getText());
                 p.setQuantidade(parseInt(jTextFieldSaborEscolhido.getText()));
@@ -63,9 +68,8 @@ public class Principal {
         cancelarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                jTextFieldNome.setText("");
-                jTextFieldEndereco.setText("");
-                 jTextFieldTelefone.setText("");
+
+
                jTextFieldSaborEscolhido.setText("");
                 jTextFieldTamanhoEscolha.setText("");
                 jTextFieldSaborEscolhido.setText("");
@@ -73,14 +77,5 @@ public class Principal {
         });
     }
 
-    public static void main(String[] args) throws IOException {
 
-
-        JFrame frame = new JFrame("Principal");
-        frame.setContentPane(new Principal().jPanelPrincipal);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-        frame.setMinimumSize(new Dimension(800, 800));
-        frame.pack();
-    }
 }
