@@ -43,8 +43,8 @@ public class CadastroController {
 
                     c.setNomeCompleto(jTextFieldNomeCompleto.getText());
                     c.setEndereco(jTextFieldEndereco.getText());
-                    c.setTelefone(Double.parseDouble(jTextFieldTelefone.getText()));
-                    c.setCPF(Double.parseDouble(jTextFieldCPF.getText()));
+                    c.setTelefone(jTextFieldTelefone.getText());
+                    c.setCPF(jTextFieldCPF.getText());
 
                     CadastroDAO dao = new CadastroDAO();
                     dao.salvar(c);

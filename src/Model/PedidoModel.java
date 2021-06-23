@@ -39,7 +39,7 @@ public class PedidoModel {
 
     private Date dataPedido;
     private String NomeCompleto;
-    private double CPF;
+    private String CPF;
     private int sabor;
     private String tamanho;
     private int quantidade;
@@ -52,11 +52,11 @@ public class PedidoModel {
         NomeCompleto = nomeCompleto;
     }
 
-    public double getCPF() {
+    public String getCPF() {
         return CPF;
     }
 
-    public void setCPF(double CPF) {
+    public void setCPF(String CPF) {
         this.CPF = CPF;
     }
 }

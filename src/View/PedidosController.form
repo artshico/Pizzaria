@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Controller.PedidosController">
-  <grid id="27dc6" binding="jPanelPrincipal" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="jPanelPrincipal" layout-manager="GridLayoutManager" row-count="16" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="676" height="549"/>
+      <xy x="20" y="20" width="798" height="549"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -18,7 +18,7 @@
       </component>
       <component id="ba038" class="javax.swing.JLabel" binding="jLabelInformaçãoPedido">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+          <grid row="13" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Abaixo Digite o numero correspondente, e o tamanho desejado ao sabor"/>
@@ -26,7 +26,7 @@
       </component>
       <component id="14e45" class="javax.swing.JTextField" binding="jTextFieldSaborEscolhido">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -36,7 +36,7 @@
       </component>
       <component id="3f705" class="javax.swing.JTextField" binding="jTextFieldTamanhoEscolha">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="14" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -46,7 +46,7 @@
       </component>
       <component id="83e50" class="javax.swing.JTextField" binding="JTextFieldQuantidade">
         <constraints>
-          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="14" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -56,7 +56,7 @@
       </component>
       <component id="7baaf" class="javax.swing.JButton" binding="fazerPedidoButton" default-binding="true">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="15" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Fazer Pedido"/>
@@ -64,7 +64,7 @@
       </component>
       <component id="5e1d8" class="javax.swing.JButton" binding="cancelarButton" default-binding="true">
         <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="15" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <hideActionText value="false"/>
@@ -73,7 +73,7 @@
       </component>
       <component id="4a36" class="javax.swing.JTextField" binding="jTextFieldCPF">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="12" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -81,9 +81,57 @@
           <text value="Digite seu CPF aqui, somente numeros"/>
         </properties>
       </component>
+      <component id="fce5d" class="javax.swing.JLabel" binding="jLabelSabores01">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="01 - Mussarela: mussarela, massa tomate, tomates fatiados, azeitona e oregano;"/>
+        </properties>
+      </component>
+      <component id="526fb" class="javax.swing.JLabel" binding="jLabelSabor02">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="02 - Americana:  presunto, champignon, catupiry e bacon crocante;"/>
+        </properties>
+      </component>
+      <component id="e706a" class="javax.swing.JLabel" binding="jLabelSabor03">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="03 - Artezanalle: muçarela, fatias de calabresa curada picante e parmesão;"/>
+        </properties>
+      </component>
+      <component id="b387e" class="javax.swing.JLabel" binding="jLabelSabore04">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="04 - Atum: atum, cebola e muçarela (ou catupiry)"/>
+        </properties>
+      </component>
+      <component id="59080" class="javax.swing.JLabel" binding="jLabelSabor06">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=" 06 - Baiana: calabresa moída, ovos, pimenta calabresa, cebola e parmesão;"/>
+        </properties>
+      </component>
+      <component id="ee44" class="javax.swing.JLabel" binding="jLabelSabor05">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=" 05 - Bacon: muçarela (ou catupiry) e bacon crocante;"/>
+        </properties>
+      </component>
       <component id="98802" class="javax.swing.JTextField" binding="jTextFieldNomeCompleto">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -91,31 +139,246 @@
           <text value="Digite seu nome completo aqui"/>
         </properties>
       </component>
-      <grid id="1ad8" binding="jPanelTabelaPizza" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
+      <component id="62685" class="javax.swing.JLabel" binding="jLabelSabo07">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
-        <border type="none"/>
-        <children>
-          <scrollpane id="4b895" binding="jScrollPanePedidoPizza">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="453" height="153"/>
-              </grid>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <component id="7da4e" class="javax.swing.JTable" binding="jTableListaPedidoPizza">
-                <constraints/>
-                <properties/>
-              </component>
-            </children>
-          </scrollpane>
-        </children>
-      </grid>
+        <properties>
+          <text value=" 07 - Brócolis: brócolis, muçarela (ou catupiry) e bacon crocante;"/>
+        </properties>
+      </component>
+      <component id="4a823" class="javax.swing.JLabel" binding="jLabelSabor08">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="08 - Brócolis Especiale: brócolis, tomate seco, cream cheese e bacon crocante;"/>
+        </properties>
+      </component>
+      <component id="69fe3" class="javax.swing.JLabel" binding="jLabelSabor09">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="09 - Búfala: muçarela de búfala, tomate cereja e folhas de manjericão;"/>
+        </properties>
+      </component>
+      <component id="3c00c" class="javax.swing.JLabel" binding="jLabelPequena01">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="80bf5" class="javax.swing.JLabel" binding="jLabelMedia01">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="e9929" class="javax.swing.JLabel" binding="jLabelGrande01">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
+      <component id="c33d0" class="javax.swing.JLabel" binding="jLabelPequena02">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="c4ed4" class="javax.swing.JLabel" binding="jLabelMedia02">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="69047" class="javax.swing.JLabel" binding="jLabelGrande02">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
+      <component id="c220" class="javax.swing.JLabel" binding="jLabelPequena03">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="d74a6" class="javax.swing.JLabel" binding="jLabelMedia03">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="30cc0" class="javax.swing.JLabel" binding="jLabelGrande03">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
+      <component id="7cded" class="javax.swing.JLabel" binding="jLabelPequena04">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="5a06" class="javax.swing.JLabel" binding="jLabelMedia04">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="a8972" class="javax.swing.JLabel" binding="jLabelGrande04">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
+      <component id="8e767" class="javax.swing.JLabel" binding="jLabelPequena05">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="f5fb0" class="javax.swing.JLabel" binding="jLabelMedia05">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="163ac" class="javax.swing.JLabel" binding="jLabelGrande05">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
+      <component id="9af27" class="javax.swing.JLabel" binding="jLabelPequena06">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="dd2ea" class="javax.swing.JLabel" binding="jLabelMedia06">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="43a05" class="javax.swing.JLabel" binding="jLabelGande06">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
+      <component id="a18b9" class="javax.swing.JLabel" binding="jLabelPequena07">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="b9817" class="javax.swing.JLabel" binding="jLabelMedia07">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="c048f" class="javax.swing.JLabel" binding="jLabelGrande07">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
+      <component id="2c93c" class="javax.swing.JLabel" binding="jLabelPequena08">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="d72dc" class="javax.swing.JLabel" binding="jLabelMedia08">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="d17c1" class="javax.swing.JLabel" binding="jLabelGrande08">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
+      <component id="90326" class="javax.swing.JLabel" binding="jLabelPequena09">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pequena : R$15,00"/>
+        </properties>
+      </component>
+      <component id="903b3" class="javax.swing.JLabel" binding="jLabelMedia09">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Media : R$25,00"/>
+        </properties>
+      </component>
+      <component id="666f3" class="javax.swing.JLabel" binding="jLabelGrande09">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grande : R$35,00"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

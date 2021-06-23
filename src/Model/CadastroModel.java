@@ -6,8 +6,8 @@ public class CadastroModel {
 
     private String NomeCompleto;
     private String Endereco;
-    private double Telefone;
-    private double CPF;
+    private String Telefone;
+    private String CPF;
 
     public String getNomeCompleto() {
         return NomeCompleto;
@@ -25,19 +25,19 @@ public class CadastroModel {
         Endereco = endereco;
     }
 
-    public Double getTelefone() {
+    public String getTelefone() {
         return Telefone;
     }
 
-    public void setTelefone(double telefone) {
+    public void setTelefone(String telefone) {
         Telefone = telefone;
     }
 
-    public Double getCPF() {
+    public String getCPF() {
         return CPF;
     }
 
-    public void setCPF(double CPF) {
+    public void setCPF(String CPF) {
         this.CPF = CPF;
     }
 }

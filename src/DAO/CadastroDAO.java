@@ -46,8 +46,8 @@ public class CadastroDAO {
                     CadastroModel cm = new CadastroModel();
                     cm.setNomeCompleto(rs.getString("nome_completo"));
                     cm.setEndereco(rs.getString("endereço"));
-                    cm.setTelefone(rs.getDouble("telefone"));
-                    cm.setCPF(rs.getDouble("CPF"));
+                    cm.setTelefone(rs.getString("telefone"));
+                    cm.setCPF(rs.getString("CPF"));
 
                     cadastro.add(cm);
                 }

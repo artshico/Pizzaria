@@ -51,7 +51,7 @@ public class PedidoDAO {
                     pm.setTamanho(rs.getString("tamanho"));
                     pm.setQuantidade(rs.getInt("quantidade"));
                     pm.setNomeCompleto(rs.getString("nome_completo"));
-                    pm.setCPF(rs.getDouble("CPF"));
+                    pm.setCPF(rs.getString("CPF"));
 
                     pedidos.add(pm);
                 }
