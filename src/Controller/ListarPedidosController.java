@@ -14,22 +14,23 @@ public class ListarPedidosController {
 
     public ListarPedidosController() {
         String[] colunas = new String[]{
-                "data_pedido", "sabor","tamanho","quantidade", "nome_completo", "CPF"};
+                "ID","data_pedido", "sabor","tamanho","quantidade", "nome_completo", "CPF"};
 
         JFrame frame = new JFrame("Lista de Pedidos");
        PedidoDAO dao = new PedidoDAO();
         ArrayList<PedidoModel> lista = dao.listar();
 
-        Object[][] infos = new Object[lista.size()][6];
+        Object[][] infos = new Object[lista.size()][7];
 
         for (int i = 0; i < lista.size(); i++) {
             PedidoModel an = lista.get(i);
-            infos[i][0] = an.getDataPedido();
-            infos[i][1] = an.getSabor();
-            infos[i][2] = an.getTamanho();
-            infos[i][3] = an.getQuantidade();
-            infos[i][4] = an.getNomeCompleto();
-            infos[i][5] = an.getCPF();
+            infos[i][0] = an.getID();
+            infos[i][1] = an.getDataPedido();
+            infos[i][2] = an.getSabor();
+            infos[i][3] = an.getTamanho();
+            infos[i][4] = an.getQuantidade();
+            infos[i][5] = an.getNomeCompleto();
+            infos[i][6] = an.getCPF();
 
         }
 

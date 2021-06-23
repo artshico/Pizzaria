@@ -43,6 +43,7 @@ public class PedidoModel {
     private int sabor;
     private String tamanho;
     private int quantidade;
+    private int ID;
 
     public String getNomeCompleto() {
         return NomeCompleto;
@@ -58,5 +59,13 @@ public class PedidoModel {
 
     public void setCPF(String CPF) {
         this.CPF = CPF;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
     }
 }

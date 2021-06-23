@@ -46,6 +46,7 @@ public class PedidoDAO {
 
                 while(rs.next()){
                     PedidoModel pm = new PedidoModel();
+                    pm.setID(rs.getInt("ID"));
                     pm.setDataPedido(rs.getDate("data_pedido"));
                     pm.setSabor(rs.getInt("sabor"));
                     pm.setTamanho(rs.getString("tamanho"));
