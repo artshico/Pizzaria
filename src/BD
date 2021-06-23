@@ -1,9 +1,13 @@
+PedidosPizzaria
+
 CREATE TABLE pedidos(
 ID INT PRIMARY KEY auto_increment,
 data_pedido Date,
 sabor INT,
 tamanho VARCHAR(255),
-quantidade INT
+quantidade INT,
+nome_completo VARCHA(255)
+CPF BIGINT
 );
 
 
@@ -11,4 +15,14 @@ CREATE TABLE CADASTRO(
 nome_completo VARCHAR(255),
 endereço VARCHAR(255),
 telefone BIGINT
+CPF BIGINT PRIMARY KEY
+);
+
+
+CREATE cadastropizza(
+nome_pizza VARCHAR(255),
+ingredientes VARCHAR(255),
+tamanho_pequeno VARCHAR(255),
+tamanho_medio VARCHAR(255),
+tamanho_grande VARCHAR(255)
 );

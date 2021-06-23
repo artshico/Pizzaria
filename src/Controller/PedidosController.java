@@ -1,6 +1,8 @@
 package Controller;
 
+import DAO.CadastroSaborPizzaDAO;
 import DAO.PedidoDAO;
+import Model.CadastroSaborPizzaModel;
 import Model.PedidoModel;
 import jdk.internal.logger.BootstrapLogger;
 
@@ -9,37 +11,31 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import static java.lang.Integer.*;
 
-public class PrincipalController {
+public class PedidosController {
 
     private JPanel jPanelPrincipal;
     private JLabel jLabelTitulo;
-    private JLabel jlabelSabor01;
-    private JLabel jLabelSabor02;
-    private JLabel jLabelSabor03;
-    private JLabel jLabelSabor04;
-    private JLabel jLabelSabor05;
-    private JLabel jLabelSabor06;
-    private JLabel jLabelSabor07;
-    private JLabel jLabelSabor08;
-    private JLabel jLabelSabor09;
-    private JLabel jLabelSabor10;
     private JLabel jLabelInformaçãoPedido;
-    private JLabel jLabelTamanhoPizzaPequeno;
-    private JLabel jLabelTamanhoPizzaMedia;
-    private JLabel jLabelTamanhoGrande;
     private JTextField jTextFieldSaborEscolhido;
     private JTextField jTextFieldTamanhoEscolha;
     private JTextField JTextFieldQuantidade;
     private JButton fazerPedidoButton;
     private JButton cancelarButton;
+    private JTextField jTextFieldNomeCompleto;
+    private JTextField jTextFieldCPF;
+    private JScrollPane jScrollPanePedidoPizza;
+    private JTable jTableListaPedidoPizza;
+    private JPanel jPanelTabelaPizza;
 
-    public PrincipalController() {
+    public PedidosController() {
 
             JFrame frame = new JFrame("Pedido");
+
             frame.setContentPane(jPanelPrincipal);
             frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             frame.setVisible(true);
@@ -54,6 +50,8 @@ public class PrincipalController {
 
                 p.setDataPedido(Calendar.getInstance().getTime());
                 p.setSabor(parseInt(jTextFieldSaborEscolhido.getText()));
+                p.setNomeCompleto(jTextFieldNomeCompleto.getText());
+                p.setCPF(Double.parseDouble(jTextFieldCPF.getText()));
                 p.setTamanho(jTextFieldTamanhoEscolha.getText());
                 p.setQuantidade(parseInt(jTextFieldSaborEscolhido.getText()));
 
@@ -64,14 +62,43 @@ public class PrincipalController {
         cancelarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-
+                jTextFieldCPF.setText("");
+                jTextFieldNomeCompleto.setText("");
                jTextFieldSaborEscolhido.setText("");
                 jTextFieldTamanhoEscolha.setText("");
                 jTextFieldSaborEscolhido.setText("");
             }
         });
+
+        String[] colunas = new String[]{
+                "nome_pizza", "ingrediente", "tamanho_pequeno", "tamanho_medio", "tamanho_grande"};
+
+        JFrame frame1 = new JFrame("Lista de Pizzas");
+        CadastroSaborPizzaDAO dao = new CadastroSaborPizzaDAO();
+        ArrayList<CadastroSaborPizzaModel> lista = dao.listar();
+
+        Object[][] infos = new Object[lista.size()][5];
+
+        for (int i = 0; i < lista.size(); i++) {
+            CadastroSaborPizzaModel an = lista.get(i);
+            infos[i][0] = an.getNomePizza();
+            infos[i][1] = an.getIngredientes();
+            infos[i][2] = an.getTamanhoPequeno();
+            infos[i][3] = an.getTamanhoMedio();
+            infos[i][4] = an.getTamanhoGrande();
+
+        }
+
+        jTableListaPedidoPizza = new JTable(infos, colunas);
+        jScrollPanePedidoPizza = new JScrollPane(jTableListaPedidoPizza);
+        jTableListaPedidoPizza.setFillsViewportHeight(true);
+        frame.setContentPane(jScrollPanePedidoPizza);
+
+
     }
 
 
-}
+    }
+
+
+
