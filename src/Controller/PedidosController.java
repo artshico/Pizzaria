@@ -84,11 +84,11 @@ public class PedidosController {
                 PedidoModel p = new PedidoModel();
 
                 p.setDataPedido(Calendar.getInstance().getTime());
-                p.setSabor(parseInt(jTextFieldSaborEscolhido.getText()));
+                p.setSabor(jTextFieldSaborEscolhido.getText());
                 p.setNomeCompleto(jTextFieldNomeCompleto.getText());
                 p.setCPF(jTextFieldCPF.getText());
                 p.setTamanho(jTextFieldTamanhoEscolha.getText());
-                p.setQuantidade(parseInt(JTextFieldQuantidade.getText()));
+                p.setQuantidade(JTextFieldQuantidade.getText());
 
                 PedidoDAO dao = new PedidoDAO();
                 dao.salvar(p);

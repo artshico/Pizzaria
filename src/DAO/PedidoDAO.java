@@ -48,9 +48,9 @@ public class PedidoDAO {
                     PedidoModel pm = new PedidoModel();
                     pm.setID(rs.getInt("ID"));
                     pm.setDataPedido(rs.getDate("data_pedido"));
-                    pm.setSabor(rs.getInt("sabor"));
+                    pm.setSabor(rs.getString("sabor"));
                     pm.setTamanho(rs.getString("tamanho"));
-                    pm.setQuantidade(rs.getInt("quantidade"));
+                    pm.setQuantidade(rs.getString("quantidade"));
                     pm.setNomeCompleto(rs.getString("nome_completo"));
                     pm.setCPF(rs.getString("CPF"));
 

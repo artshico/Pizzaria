@@ -12,12 +12,12 @@ public class PedidoModel {
         this.dataPedido = dataPedido;
     }
 
-    
-    public int getSabor() {
+
+    public String getSabor() {
         return sabor;
     }
 
-    public void setSabor(int sabor) {
+    public void setSabor(String sabor) {
         this.sabor = sabor;
     }
 
@@ -29,21 +29,29 @@ public class PedidoModel {
         this.tamanho = tamanho;
     }
 
-    public int getQuantidade() {
+    public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(int quantidade) {
+    public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
 
     private Date dataPedido;
     private String NomeCompleto;
     private String CPF;
-    private int sabor;
+    private String sabor;
     private String tamanho;
-    private int quantidade;
+    private String quantidade;
     private int ID;
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 
     public String getNomeCompleto() {
         return NomeCompleto;
@@ -61,11 +69,5 @@ public class PedidoModel {
         this.CPF = CPF;
     }
 
-    public int getID() {
-        return ID;
-    }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
 }
